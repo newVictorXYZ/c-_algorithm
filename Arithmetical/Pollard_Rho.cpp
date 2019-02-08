@@ -1,3 +1,4 @@
+// Pollard Rho 算法求大数因子
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
@@ -7,12 +8,12 @@ using namespace std;
 const int Times = 10;
 const int N = 5500;
 typedef long long LL;
-LL ct,cnt;
-LL fac[N],num[N];
+LL ct, cnt;
+LL fac[N], num[N];
 
-LL gcd(LL a,LL b)
+LL gcd(LL a, LL b)
 {
-    return b?gcd(b,a%b):a;
+    return b ? gcd(b, a%b) : a;
 }
 LL multi(LL a,LL b,LL m)
 {

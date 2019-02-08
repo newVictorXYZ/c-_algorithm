@@ -1,3 +1,4 @@
+//
 // 求解（p,q） 使 p*a + q*b = gcd(a,b)
 #include <iostream>
 using namespace std;
